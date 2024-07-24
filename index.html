@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="WEBSTUDIO">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEBSTUDIO</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" 
@@ -37,6 +38,27 @@
                   <li><a class="nav-address-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>  
             </address>
+
+            <button class="burger-button" type="button" data-menu-open>
+                <svg class="burger-icon" width="24" height="24">
+                    <use href="./images/icons.svg#con-burger"></use>
+                </svg>
+            </button>
+        </div>
+
+
+        <div class="mobile-menu is-open" data-menu>
+            <div class="mobile-menu-container container">
+                <button class="mobile-menu-close" data-menu-close>Close</button>
+                <nav class="mobile-menu-nav">Navigation</nav>
+                <address>address</address>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
         </div>
     </HEAder>
 
@@ -560,5 +582,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>    
 </html>
